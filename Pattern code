@@ -1,0 +1,118 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   //i for rows
+    int i=0;
+    //n is no of rows 
+    int n;
+    std::cin >> n ;
+    while(i<n)
+    {
+        //j for columns
+        int j=0;
+        //Here we will increase or decrease the n value based on columns
+        while(j<n-1)
+        {
+           cout << "*" ; 
+           j++;
+        }
+        
+        cout<<endl;
+        
+        i++;
+    }
+}
+output:
+3
+**
+**
+**
+int main()
+{
+    int i=0;
+    int n;
+    std::cin >> n ;
+    while(i<n)
+    {
+        int j=0;
+        while(j<n)
+        {
+           cout << i ; 
+          j++;
+        }
+         
+        
+        cout<<endl;
+        
+        i++;
+    }
+}
+output:
+000
+111
+222
+ while(i<n)
+    {
+        int j=0;
+        while(j<n)
+        {
+           cout << n-j+1; 
+          j++;
+        }
+         
+          cout<<endl;
+        
+        i++;
+    }
+output:
+4
+4321
+4321
+4321
+4321
+ int count=1;
+    std::cin >> n;
+    while(i<=n)
+    {
+        int j=1;
+        while(j<=n)
+        {
+           cout << count << " "; 
+           count=count+1;
+          j++;
+        }
+output:
+4
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 14 15 16 
+j<=n+1-i
+output
+****
+***
+**
+*
+J<=i
+*
+**
+***
+****
+ while(j<=i)
+        {
+           cout << i; 
+           
+          j++;
+        }
+output:
+1
+22
+333
+4444
+output
+
+        
