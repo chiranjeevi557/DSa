@@ -115,4 +115,105 @@ output:
 4444
 output
 
+ pre increment and post increment;
+
+a++=post increment
+++a=pre increment
+
+int a=5;
+int b=a++;
+output:b=5;
+whenever u look into the above example a value is 5 and we are using a in b once we use  a value in b then the value of a is incremented automatically before going to the next usage.
+int a=5;
+int b=++a;
+output:b=6
+whenever u look into the above example a value is 5 and we are using a in b then a is incremented automatically before going to the next use in b.
+int main()
+{
+   
+    int n=10;
+    for(int i=0,j=0;i<n&&j<n;i++,j++)
+    {
+        std::cout << i << std::endl;
+    }
+}
+In for loop we will write many initilaztions and many conditions and many increments.It is not like we will use only one one initialization , one condition,one increment
+
+For loop execution flow;
+
+for(int i=0;i<n;i++)
+{
+sout(i);
+}
+first compiler will come to int i=0; it will initialize i then it comes to i<n then it go to sout(i) then it will go to i++ then it will go to i<=n then sout(i) like it will iterate upto the condition will fail.
+The for loop will come to int i=0 only one time.
+
+Fibonaci series:
+it is a series of numbers where the number is sum of previous two numbers.
+(n-2)+(n-1)
+
+cout<<a<<endl<<b<<endl;
+    for(int i=1;i<=10;i++)
+    {
+        sum=a+b;
+        cout << sum <<endl;
+        a=b;
+        b=sum;
         
+    }
+    
+    output:
+    o 1 1 2 3 ......
+    
+    Prime Number:
+    A prime number has two factors.it is divisable by 1 and itself.To check given num is prime or not we will divide the number except 1 and the number
+    2 to (n-1)
+    int main()
+{
+    
+    int n=7;
+    
+    for(int i=2;i<7;i++)
+    {
+        
+      if(n%i==0)
+      {
+          cout<<"it is not a prime number";
+          break;
+      }else
+      {
+         cout<<"it is a prime number"; 
+         break;
+      }
+    }
+    
+
+    return 0;
+}
+output:
+It is prpime number
+
+continue-It is used to skip the item if the condition is sets as true.
+
+Divison:
+234%10=4
+Remainde
+Modular Divison:
+234/10=23
+quotient
+int n=435;
+    int sum=0;
+    int product=1;
+    int r;
+    while(n>0)
+    {
+        r=n%10;
+        sum=sum+r;
+        product=product*r;
+        n=n/10;
+    }
+    we will use (n>0) or (n!=0)
+    
+    std::cout << sum+product << std::endl;
+
+       
