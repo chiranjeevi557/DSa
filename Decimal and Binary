@@ -1,0 +1,8 @@
+o and 1
+To convert into binary format
+   . . 64 32 16 8 4 2 1
+   left shift
+   5<<1
+   101(the binary format of 5)
+   we want to do left shift by 1
+   100(we will just )
