@@ -1,8 +1,53 @@
+& operator:
+*if both are 1 then the value is also 1 remaining all are zero.
+
+| operator:
+*if both are 0 then the value is also 0 remaining all are one.
+*for one's compliment we are we will convert 1 to 0 and o to 1.
+*for two's compliment we are we will convert 1 to 0 and o to 1 and we are adding 1 
+int a=4;
+for int we have 4 bytes
+4 bytes=32 bits
+000000......0100(the binary format of a value)
+if the binary format is started with 1 then we will treat it as negative number
+if it will starts with 1 to print the value of binary format we are applying two's complimentart on it
+*the truth table for XOR is if both are 0 or 1 then the value is 0 otherwise 1
 o and 1
 To convert into binary format
    . . 64 32 16 8 4 2 1
    left shift
    5<<1
    101(the binary format of 5)
-   we want to do left shift by 1
-   100(we will just )
+   we want to do left shift by 1.so we want to add one zero on the right side.If we want to do left shift by 2 then we will add two zeros at the end
+   1010
+ *In left shift for small numbers the answer is mostly to be n*2 power of left decimal number;
+ Right shift:
+ In right shift we will remove the last bits based on the input
+ 5>>1
+ 101>>1=10
+ 5>>2(5/2=2/2=1)
+ 101>>2=1
+* In left shift for small numbers the answer is mostly to be n/2 power of right shift decimal number;
+*to perform left and right of negative numbers it is totally dependent on compiler
+*program to count no of o's and 1's
+    uint16_t a=0100010;
+    int b=5;
+    int count=0;
+   
+  //  0101
+  //  01010
+  cout<<(a!=0)<<endl;
+  cout<<(a&1)<<endl;
+  while(a!=0)
+  {
+      if(a&1)
+      {
+         count++ ;
+      }
+      a>>1;
+  }
+  cout<<count;
+  
+  Decimal to binary conversion:
+  2 -> 0010
+  5 -> 0101
